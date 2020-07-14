@@ -1,16 +1,119 @@
 <!DOCTYPE html>
 <style>
+    * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+    }
+
+    body {
+        font-family: 'Raleway', sans-serif;
+    }
+
     #mainBox {
+        height: 300px;
+        width: 500px;
+        margin: 100px;
         border-style: solid;
         color: black;
-        
+        background-color: lightgreen;
     }
+
+    #secondBox {
+        height: 200px;
+        width: 450px;
+        margin: 10px auto auto auto;
+        border-top: solid;
+    }
+
+    #gridContainer {
+        height: 180px;
+        width: 450px;
+        margin-top: 20px;
+        display: grid;
+        grid-template-columns: repeat(4, 25%);
+        grid-template-rows: repeat(3, 30%);
+        justify-content: space-evenly;
+        align-content: space-evenly;
+        text-align: center;
+    }
+
+    .icons {
+        max-height: 100%;
+        object-fit: cover;
+    }
+
+    h1 {
+        padding-top: 10px;
+        text-align: center;
+    }
+    h3 {
+        font-size: medium;
+        padding-top: 5px;
+        text-align: center;
+    }
+
+    p {
+        font-weight: bold;
+    }
+
 </style>
 
 <html>
     <body>
         <div id="mainBox">
-            
+            <h1>IOPOWER1</h1>
+            <h3>MAC : AA:BB:CC:DD:EE:FF</h3>
+
+            <div id="secondBox">
+                <div id="gridContainer">
+                    <div id="container1"></div>
+                    <div id="container2">
+                        <p>전원</p>
+                    </div>
+                    <div id="container3">
+                        <p>속도</p>
+                    </div>
+                    <div id="container4">
+                        <p>상태</p>
+                    </div>
+                    <div id="container5">
+                        <img class="icons" src="https://cdn3.iconfinder.com/data/icons/car-parts-10/200/230-512.png" alt="fan">
+                    </div>
+                    <div id="container6">
+                        <form>
+                            <label><input type="radio" name="on-off"> ON</label><br>
+                            <label><input type="radio" name="on-off"> OFF</label>
+                        </form> 
+                    </div>
+                    <div id="container7">
+                        <form>
+                            <input type="number" value="50" min="10" max="100">
+                        </form>
+                    </div>
+                    <div id="container8">
+                        정상
+                    </div>
+                    <div id="container9">
+                        <img class="icons" src="https://cdn.iconscout.com/icon/premium/png-256-thumb/pump-32-557511.png" alt="water pump">
+                    </div>
+                    <div id="container10">
+                        <form>
+                            <label><input type="radio" name="on-off"> ON</label><br>
+                            <label><input type="radio" name="on-off"> OFF</label>
+                        </form> 
+                    </div>
+                    <div id="container11">
+                        <form>
+                            <input type="number" value="50" min="10" max="100">
+                        </form>
+                    </div>
+                    <div id="container12">
+                        정상
+                    </div>
+                </div>
+            </div>
+
         </div>
     </body>
 </html>
